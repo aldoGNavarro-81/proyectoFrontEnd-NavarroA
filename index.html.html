@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don Boston Petstore - Todo para tu mejor amigo</title>
+    <!-- Íconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Tipografía Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Vinculación con la hoja de estilos CSS externa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Banner Promocional -->
+    <aside class="top-bar">
+        🐾 ¡Envío GRATIS en compras superiores a $15.000! 🐾
+    </aside>
+
+    <!-- Navegación Principal -->
+    <nav aria-label="Navegación principal">
+        <div class="nav-container">
+            <a href="#" class="logo"><i class="fa-solid fa-dog"></i> Don Boston</a>
+            <ul class="nav-list">
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#testimonios">Opiniones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Encabezado / Hero Section -->
+    <header id="inicio">
+        <img class="hero-img" src="./imagenes/portada2.jpeg" alt="Portada Don Boston Petstore">
+        <div class="hero-content">
+            <h1>Bienvenidos a Don Boston Petstore</h1>
+            <p class="subtitle">Todo lo que tu mejor amigo necesita en un solo lugar</p>
+            <p>Alimentos premium, juguetes, accesorios y la mejor atención para consentir a las mascotas de la casa.</p>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+
+        <!-- Bloque de Beneficios / Trust Badges -->
+        <section class="features-grid" aria-label="Nuestros beneficios">
+            <div class="feature-item">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Envíos Rápidos</h3>
+                <p>Recibilo en la puerta de tu casa en 24/48 hs.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-shield-cat"></i>
+                <h3>Calidad Garantizada</h3>
+                <p>Las mejores marcas aprobadas por veterinarios.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-credit-card"></i>
+                <h3>Pagos Seguros</h3>
+                <p>Tarjetas de crédito, débito y transferencias.</p>
+            </div>
+        </section>
+
+        <!-- Productos Destacados -->
+        <section class="card productos" id="productos">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="product-grid">
+                
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&q=80&w=400" alt="Alimento Balanceado Perro" loading="lazy">
+                    <h3 class="product-title">Alimento Balanceado Premium (15kg)</h3>
+                    <p class="product-description">Nutrición completa e ingredientes naturales para perros adultos de todas las razas.</p>
+                    <p class="product-price">$24.500</p>
+                    <button class="btn-buy" type="button"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
+                </article>
+
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&q=80&w=400" alt="Rascador de Gatos" loading="lazy">
+                    <h3 class="product-title">Rascador interactivo para Gatos</h3>
+                    <p class="product-description">Ideal para mantener sus uñas sanas y brindarle horas de entretenimiento.</p>
+                    <p class="product-price">$8.200</p>
+                    <button class="btn-buy" type="button"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
+                </article>
+
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&q=80&w=400" alt="Arnés para Perros" loading="lazy">
+                    <h3 class="product-title">Arnés Ergonómico Regulable</h3>
+                    <p class="product-description">Diseño acolchado y seguro, diseñado para paseos cómodos sin tirones.</p>
+                    <p class="product-price">$5.900</p>
+                    <button class="btn-buy" type="button"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Sección de Video Institucional -->
+        <section class="card" id="nosotros">
+            <h2 class="section-title">Conocenos en Acción</h2>
+            <div class="video-container">
+                <video controls poster="./imagenes/DonBoston.jpg">
+                    <source src="./video/video1.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                    <track src="./subtitulo.vtt" kind="subtitles" srclang="es" label="Español" default>
+                </video>
+            </div>
+        </section>
+
+        <!-- Sección de Reseñas -->
+        <section class="reseñas" id="testimonios">
+            <h2 class="section-title full-width">Lo que dicen nuestros clientes</h2>
+            
+            <section class="card testimonio-card">
+                <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+                <p>"Excelente atención. Compré el alimento de mi perro y llegó en menos de 24 horas. ¡Súper recomendados!"</p>
+                <div class="testimonial-user">
+                    <span aria-label="5 estrellas">⭐ ⭐ ⭐ ⭐ ⭐</span>
+                    <strong>Laura M.</strong>
+                </div>
+            </section>
+
+            <section class="card testimonio-card">
+                <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+                <p>"Los mejores precios de la zona y la calidad de los accesorios es genial. Mi gato ama su nuevo rascador."</p>
+                <div class="testimonial-user">
+                    <span aria-label="5 estrellas">⭐ ⭐ ⭐ ⭐ ⭐</span>
+                    <strong>Carlos G.</strong>
+                </div>
+            </section>
+
+            <section class="card testimonio-card">
+                <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+                <p>"Compré el arnés ergonómico para pasear a mi ovejero y la diferencia es increíble. Muy buena calidad."</p>
+                <div class="testimonial-user">
+                    <span aria-label="5 estrellas">⭐ ⭐ ⭐ ⭐ ⭐</span>
+                    <strong>Mariana R.</strong>
+                </div>
+            </section>
+        </section>
+
+        <!-- Preguntas Frecuentes -->
+        <section class="card" id="faq">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <details>
+                <summary>¿Cuáles son los medios de pago aceptados?</summary>
+                <p>Aceptamos tarjetas de crédito, débito, Mercado Pago y transferencias bancarias con un 10% de descuento.</p>
+            </details>
+            <details>
+                <summary>¿Hacen envíos a todo el país?</summary>
+                <p>Sí, enviamos a todo el país mediante correo. Además, tenemos envíos en el día para zonas cercanas.</p>
+            </details>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section class="card" id="contacto">
+            <h2 class="section-title">Envianos tu consulta</h2>
+            <form action="https://formspree.io/f/mjyvbwwj" method="POST">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="given-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" autocomplete="family-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" autocomplete="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">N° de teléfono</label>
+                        <input type="tel" id="telefono" name="numero" placeholder="Ej: 1123456789" autocomplete="tel" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                    </div>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+        <!-- Tabla de Datos de Contacto Recibidos -->
+        <section class="card" id="registros-contacto">
+            <h2 class="section-title">Registro de Consultas Recibidas</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Correo electrónico</th>
+                            <th scope="col">Mensaje</th>
+                            <th scope="col">Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>María González</td>
+                            <td>maria@gmail.com</td>
+                            <td>Consulta sobre el costo de envío...</td>
+                            <td><span class="status status-completed">Respondido</span></td>
+                        </tr>
+                        <tr>
+                            <td>Lucas Pereyra</td>
+                            <td>lucas.p@hotmail.com</td>
+                            <td>¿Tienen stock del alimento balanceado?</td>
+                            <td><span class="status status-completed">Respondido</span></td>
+                        </tr>
+                        <!-- Fila combinada indicando estado/categoría de mensajes -->
+                        <tr class="table-row-divider">
+                            <td colspan="4">⚠️ Mensajes pendientes de respuesta</td>
+                        </tr>
+                        <tr>
+                            <td>Sofía Martínez</td>
+                            <td>sofia.m@gmail.com</td>
+                            <td>Quiero saber la demora a Córdoba.</td>
+                            <td><span class="status status-pending">Pendiente</span></td>
+                        </tr>
+                        <tr>
+                            <td>Diego Gómez</td>
+                            <td>diego.g@outlook.com</td>
+                            <td>¿Tienen arnés en talle XL?</td>
+                            <td><span class="status status-pending">Pendiente</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/5491112345678?text=Hola!%20Quiero%20hacer%20una%20consulta" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contacto por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Don Boston Petstore - Todos los derechos reservados</p>
+        
+        <!-- Redes Sociales -->
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+
+        <p class="footer-subtext">Diseñado con ❤️ para las mascotas</p>
+    </footer>
+
+</body>
+</html>
