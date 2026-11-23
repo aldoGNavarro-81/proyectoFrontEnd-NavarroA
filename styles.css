@@ -635,3 +635,19 @@ select:focus {
     border-radius: 8px;
     border: 1px solid #e2e8f0;
 }
+
+.btn-cantidad {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.btn-cantidad:hover {
+    background-color: var(--primary-dark);
+}

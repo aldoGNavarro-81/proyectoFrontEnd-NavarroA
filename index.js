@@ -155,7 +155,13 @@ function renderizarCarrito() {
         <img src="${item.imagen}" alt="${item.nombre}" class="item-carrito-img">
         <div class="item-carrito-info">
           <h3>${item.nombre}</h3>
-          <p>Precio unitario: $${item.precio.toLocaleString("es-AR")} | Cantidad: ${item.cantidad}</p>
+          <p>
+            Precio unitario: $${item.precio.toLocaleString("es-AR")} | 
+            Cantidad: 
+            <button type="button" class="btn-cantidad" data-id="${item.id}" data-accion="restar">-</button>
+            <strong>${item.cantidad}</strong>
+            <button type="button" class="btn-cantidad" data-id="${item.id}" data-accion="sumar">+</button>
+          </p>
           <p><strong>Subtotal: $${subtotal.toLocaleString("es-AR")}</strong></p>
         </div>
       </div>
@@ -168,6 +174,30 @@ function renderizarCarrito() {
 
   totalElemento.textContent = totalGeneral.toLocaleString("es-AR");
 
+  // Evento para sumar o restar unidades
+  document.querySelectorAll(".btn-cantidad").forEach((boton) => {
+    boton.addEventListener("click", function () {
+      const id = Number(this.dataset.id);
+      const accion = this.dataset.accion;
+      const item = carrito.find((p) => p.id === id);
+      if (!item) return;
+
+      if (accion === "sumar") {
+        item.cantidad++;
+      } else if (accion === "restar") {
+        item.cantidad--;
+        if (item.cantidad <= 0) {
+          carrito = carrito.filter((p) => p.id !== id);
+        }
+      }
+
+      guardarCarrito();
+      actualizarContador();
+      renderizarCarrito();
+    });
+  });
+
+  // Evento para eliminar el producto completo
   document.querySelectorAll(".btn-eliminar").forEach((boton) => {
     boton.addEventListener("click", function () {
       const id = Number(this.dataset.id);
@@ -178,7 +208,7 @@ function renderizarCarrito() {
     });
   });
 }
-
+// 5. BOTONES VACIAR Y FINALIZAR COMPRA
 const btnVaciar = document.getElementById("btn-vaciar");
 if (btnVaciar) {
   btnVaciar.addEventListener("click", function () {
