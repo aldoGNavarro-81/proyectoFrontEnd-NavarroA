@@ -621,3 +621,17 @@ select:focus {
     font-weight: 600;
     cursor: pointer;
 }
+
+.item-carrito-detalle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.item-carrito-img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}

@@ -151,10 +151,13 @@ function renderizarCarrito() {
     const fila = document.createElement("article");
     fila.classList.add("item-carrito");
     fila.innerHTML = `
-      <div class="item-carrito-info">
-        <h3>${item.nombre}</h3>
-        <p>Precio unitario: $${item.precio.toLocaleString("es-AR")} | Cantidad: ${item.cantidad}</p>
-        <p><strong>Subtotal: $${subtotal.toLocaleString("es-AR")}</strong></p>
+      <div class="item-carrito-detalle">
+        <img src="${item.imagen}" alt="${item.nombre}" class="item-carrito-img">
+        <div class="item-carrito-info">
+          <h3>${item.nombre}</h3>
+          <p>Precio unitario: $${item.precio.toLocaleString("es-AR")} | Cantidad: ${item.cantidad}</p>
+          <p><strong>Subtotal: $${subtotal.toLocaleString("es-AR")}</strong></p>
+        </div>
       </div>
       <button type="button" class="btn-eliminar" data-id="${item.id}">
         <i class="fa-solid fa-trash"></i> Eliminar
