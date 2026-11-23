@@ -23,12 +23,13 @@
     <!-- Menu de navegacion -->
     <nav aria-label="Navegación principal">
         <div class="nav-container">
-            <a href="#" class="logo"><i class="fa-solid fa-dog"></i> Don Boston</a>
+            <a href="index.html" class="logo"><i class="fa-solid fa-dog"></i> Don Boston</a>
             <ul class="nav-list">
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#testimonios">Opiniones</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito (<span id="contador-productos">0</span>)</a></li>
             </ul>
         </div>
     </nav>
@@ -65,36 +66,10 @@
             </div>
         </section>
 
-        <!-- Cards de Productos -->
+        <!-- Cards de Productos  -->
         <section class="card productos" id="productos">
             <h2 class="section-title">Productos Destacados</h2>
-            <div class="product-grid">
-                
-                <article class="product-card">
-                    <img src="./imagenes/alimento-perro.jpg" alt="Alimento Balanceado Perro" loading="lazy">
-                    <h3 class="product-title">Alimento Balanceado Premium (15kg)</h3>
-                    <p class="product-description">Nutrición completa e ingredientes naturales para perros adultos de todas las razas.</p>
-                    <p class="product-price">$24.500</p>
-                    <button class="btn-buy" type="button"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
-                </article>
-
-                <article class="product-card">
-                    <img src="./imagenes/rascador-gato.jpg" alt="Rascador de Gatos" loading="lazy">
-                    <h3 class="product-title">Rascador interactivo para Gatos</h3>
-                    <p class="product-description">Ideal para mantener sus uñas sanas y brindarle horas de entretenimiento.</p>
-                    <p class="product-price">$8.200</p>
-                    <button class="btn-buy" type="button"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
-                </article>
-
-                <article class="product-card">
-                    <img src="./imagenes/arnes-perro.jpg" alt="Arnés para Perros" loading="lazy">
-                    <h3 class="product-title">Arnés Ergonómico Regulable</h3>
-                    <p class="product-description">Diseño acolchado y seguro, diseñado para paseos cómodos sin tirones.</p>
-                    <p class="product-price">$5.900</p>
-                    <button class="btn-buy" type="button"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
-                </article>
-
-            </div>
+            <div class="product-grid" id="contenedor-productos"></div>
         </section>
 
         <!-- Seccion Video -->
@@ -230,6 +205,30 @@
             </div>
         </section>
 
+        <!-- Preferencias de Usuario (LocalStorage) -->
+        <section class="card" id="preferencias">
+            <h2 class="section-title">Preferencias de Usuario</h2>
+            <p id="saludo-usuario"></p>
+            <form id="form-preferencias">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nombre-usuario">Tu nombre</label>
+                        <input type="text" id="nombre-usuario" placeholder="Ingresá tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="color-fondo">Color de fondo</label>
+                        <select id="color-fondo">
+                            <option value="#ffffff">Blanco</option>
+                            <option value="#f8f9fa">Gris claro</option>
+                            <option value="#e0f7fa">Celeste</option>
+                            <option value="#fce4ec">Rosa</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit">Guardar Preferencias</button>
+            </form>
+        </section>
+
     </main>
 
     <!-- Boton de WhatsApp -->
@@ -250,6 +249,8 @@
 
         <p class="footer-subtext">Diseñado con ❤️ para las mascotas</p>
     </footer>
+
+    <script src="index.js"></script>
 
 </body>
 </html>

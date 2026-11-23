@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Don Boston Petstore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <aside class="top-bar">
+        🐾 ¡Envío GRATIS en compras superiores a $15.000! 🐾
+    </aside>
+
+    <nav aria-label="Navegación principal">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-dog"></i> Don Boston</a>
+            <ul class="nav-list">
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#testimonios">Opiniones</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito (<span id="contador-productos">0</span>)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style="margin-top: 40px;">
+        <section class="card" id="seccion-carrito">
+            <h2 class="section-title">Tu Carrito de Compras</h2>
+            <div id="lista-carrito"></div>
+
+            <div class="resumen-carrito">
+                <p class="total-texto">Total: $<span id="total-carrito">0</span></p>
+                <div class="acciones-carrito">
+                    <button type="button" id="btn-vaciar" class="btn-vaciar">Vaciar Carrito</button>
+                    <button type="button" id="btn-finalizar" class="btn-finalizar">Finalizar Compra</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Don Boston Petstore - Todos los derechos reservados</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <p class="footer-subtext">Diseñado con ❤️ para las mascotas</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
