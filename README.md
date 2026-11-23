@@ -42,7 +42,7 @@ proyectoFrontEnd-NavarroA/
 ├── index.html          # Página principal (catálogo, reseñas, contacto y preferencias)
 ├── carrito.html        # Página del carrito de compras y resumen de total
 ├── styles.css          # Estilos propios y diseño responsive
-├── index.js            # Lógica de catálogo dinámico, carrito y LocalStorage
+├── script.js            # Lógica de catálogo dinámico, carrito y LocalStorage
 ├── subtitulo.vtt       # Subtítulos del video
 └── README.md           # Documentación del proyecto
 📩 Cómo configuré Formspree

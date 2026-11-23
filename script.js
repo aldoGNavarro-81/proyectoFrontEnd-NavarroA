@@ -1,4 +1,3 @@
-
 // DATOS: ARREGLO DE OBJETOS DE PRODUCTOS
 const productos = [
   {
